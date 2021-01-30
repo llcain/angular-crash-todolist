@@ -1,4 +1,4 @@
-<form class="form" (ngSubmit)="onSubmit()">
+<form class="form" #form="ngForm" (ngSubmit)="onSubmit(); form.reset()">
   <input
     type="text"
     name="title"
